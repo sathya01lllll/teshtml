@@ -9,25 +9,23 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f0f0f0;
+            background: #f4f4f4;
             color: #333;
-            overflow-x: hidden;
         }
-        header {
-            background: #333;
+        .header {
+            background: #282c34;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px;
             text-align: center;
+            position: relative;
         }
-        .animated-text {
-            font-size: 24px;
-            font-weight: bold;
-            color: #fff;
+        .header h1 {
+            font-size: 2em;
+            margin: 0;
             overflow: hidden;
             white-space: nowrap;
             border-right: .15em solid orange;
-            animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
-            display: inline;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
         }
         @keyframes typing {
             from { width: 0; }
@@ -37,76 +35,69 @@
             from, to { border-color: transparent; }
             50% { border-color: orange; }
         }
-        .container {
-            padding: 20px;
-        }
         .catalog-section {
-            margin-bottom: 20px;
+            padding: 20px;
+            margin: 10px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        h2 {
-            color: #333;
+        .catalog-section h2 {
+            margin-top: 0;
+            font-size: 1.5em;
         }
         .product-list {
             list-style: none;
             padding: 0;
         }
         .product-list li {
-            background: #fff;
-            margin: 5px 0;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            margin: 10px 0;
+            font-size: 1.1em;
         }
         .price {
             font-weight: bold;
         }
         .btn {
-            text-decoration: none;
-            color: #fff;
-            background-color: #28a745;
+            display: inline-block;
+            margin-left: 10px;
             padding: 5px 10px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
             border-radius: 3px;
-            font-weight: bold;
-            transition: background-color 0.3s;
+            font-size: 0.9em;
+            transition: background 0.3s;
         }
         .btn:hover {
-            background-color: #218838;
+            background: #0056b3;
         }
         footer {
-            background: #333;
+            background: #282c34;
             color: #fff;
-            padding: 10px 0;
             text-align: center;
-        }
-        audio {
-            display: none;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="animated-text">𝙎𝘼𝙏𝙃𝙔𝘼 𝙎𝙏𝙊𝙍𝙀 𝙈𝙀𝙉𝙔𝙀𝘿𝙄𝘼𝙆𝘼𝙉</div>
+    <header class="header">
+        <h1>SATHYA STORE MENYEDIAKAN</h1>
     </header>
 
-    <audio autoplay loop>
-        <source src="https://s51.aconvert.com/convert/p3r68-cdx67/28ots-euign.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <div class="container">
+    <div class="catalog">
         <div class="catalog-section">
             <h2>List Sewa Bot</h2>
             <ul class="product-list">
-                <li>1 Hari - <span class="price">Rp 2.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%201%20hari" class="btn">BUY NOW</a></li>
-                <li>2 Hari - <span class="price">Rp 3.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%202%20hari" class="btn">BUY NOW</a></li>
-                <li>5 Hari - <span class="price">Rp 5.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%205%20hari" class="btn">BUY NOW</a></li>
-                <li>7 Hari - <span class="price">Rp 8.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%207%20hari" class="btn">BUY NOW</a></li>
-                <li>10 Hari - <span class="price">Rp 9.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%2010%20hari" class="btn">BUY NOW</a></li>
-                <li>15 Hari - <span class="price">Rp 13.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%2015%20hari" class="btn">BUY NOW</a></li>
-                <li>20 Hari - <span class="price">Rp 17.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%2020%20hari" class="btn">BUY NOW</a></li>
+                <li>1 Hari - <span class="price">Rp 2.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%20untuk%201%20hari" class="btn">BUY NOW</a></li>
+                <li>2 Hari - <span class="price">Rp 3.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%20untuk%202%20hari" class="btn">BUY NOW</a></li>
+                <li>5 Hari - <span class="price">Rp 5.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%20untuk%205%20hari" class="btn">BUY NOW</a></li>
+                <li>7 Hari - <span class="price">Rp 8.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%20untuk%207%20hari" class="btn">BUY NOW</a></li>
+                <li>10 Hari - <span class="price">Rp 9.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%20untuk%2010%20hari" class="btn">BUY NOW</a></li>
+                <li>15 Hari - <span class="price">Rp 13.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%20untuk%2015%20hari" class="btn">BUY NOW</a></li>
+                <li>20 Hari - <span class="price">Rp 17.000</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20sewa%20bot%20untuk%2020%20hari" class="btn">BUY NOW</a></li>
             </ul>
         </div>
 
@@ -130,37 +121,26 @@
         <div class="catalog-section">
             <h2>Katalog List Panel Bot</h2>
             <ul class="product-list">
-                <li>📦 Paket 2GB - <span class="price">Rp 2.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%202GB" class="btn">BUY NOW</a></li>
-                <li>📦 Paket 3GB - <span class="price">Rp 3.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%203GB" class="btn">BUY NOW</a></li>
-                <li>📦 Paket 4GB - <span class="price">Rp 4.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%204GB" class="btn">BUY NOW</a></li>
-                <li>📦 Paket 5GB - <span class="price">Rp 6.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%205GB" class="btn">BUY NOW</a></li>
-                <li>📦 Paket 6GB - <span class="price">Rp 7.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%206GB" class="btn">BUY NOW</a></li>
-                <li>📦 Paket 7GB - <span class="price">Rp 8.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%207GB" class="btn">BUY NOW</a></li>
-                <li>📦 Paket 8GB - <span class="price">Rp 9.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%208GB" class="btn">BUY NOW</a></li>
-                <li>📦 Paket 9GB - <span class="price">Rp 10.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%209GB" class="btn">BUY NOW</a></li>
-                <li>📦 Paket UNLI - <span class="price">Rp 29.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%20UNLI" class="btn">BUY NOW</a></li>
-            </ul>
-        </div>
-
-        <div class="catalog-section">
-            <h2>Katalog SC Bot</h2>
-            <ul class="product-list">
-                <li>SC BUG - <span class="price">Rp 35K</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20SC%20BUG" class="btn">BUY NOW</a></li>
-                <li>SC PushKontak - <span class="price">Rp 30K</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20SC%20PushKontak" class="btn">BUY NOW</a></li>
-                <li>SC JPM - <span class="price">Rp 30K</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20SC%20JPM" class="btn">BUY NOW</a></li>
-                <li>SC Jaga GC - <span class="price">Rp 30K</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20SC%20Jaga%20GC" class="btn">BUY NOW</a></li>
-                <li>SC MD V9 - <span class="price">Rp 100K</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20SC%20MD%20V9" class="btn">BUY NOW</a></li>
-                <li>SC MD V19 - <span class="price">Rp 200K</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20SC%20MD%20V19" class="btn">BUY NOW</a></li>
-                <li>SC Store - <span class="price">Rp 30K</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20SC%20Store" class="btn">BUY NOW</a></li>
-                <li>SC Button - <span class="price">Rp 30K</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20SC%20Button" class="btn">BUY NOW</a></li>
-                <li>SC CPanel V1 - <span class="price">Rp 35K</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20SC%20CPanel%20V1" class="btn">BUY NOW</a></li>
-                <li>SC CPanel + Nokos - <span class="price">Rp 50K</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20SC%20CPanel%20%2B%20Nokos" class="btn">BUY NOW</a></li>
+                <li>Paket 2GB - <span class="price">Rp 2.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%202GB" class="btn">BUY NOW</a></li>
+                <li>Paket 3GB - <span class="price">Rp 3.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%203GB" class="btn">BUY NOW</a></li>
+                <li>Paket 4GB - <span class="price">Rp 4.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%204GB" class="btn">BUY NOW</a></li>
+                <li>Paket 5GB - <span class="price">Rp 6.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%205GB" class="btn">BUY NOW</a></li>
+                <li>Paket 6GB - <span class="price">Rp 7.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%206GB" class="btn">BUY NOW</a></li>
+                <li>Paket 7GB - <span class="price">Rp 8.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%207GB" class="btn">BUY NOW</a></li>
+                <li>Paket 8GB - <span class="price">Rp 9.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%208GB" class="btn">BUY NOW</a></li>
+                <li>Paket 9GB - <span class="price">Rp 10.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%209GB" class="btn">BUY NOW</a></li>
+                <li>Paket UNLI - <span class="price">Rp 29.000/Bulan</span> <a href="https://wa.me/6281329731976?text=Saya%20ingin%20beli%20Paket%20UNLI" class="btn">BUY NOW</a></li>
             </ul>
         </div>
     </div>
 
     <footer>
-        &copy; 2024 SATHYA STORE
+        <p>&copy; 2024 SATHYA STORE. All rights reserved.</p>
     </footer>
+
+    <audio autoplay>
+        <source src="https://telegra.ph/file/44774996ae35782060637.mp4" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
 </body>
 </html>
